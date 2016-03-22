@@ -1,0 +1,6 @@
+---
+# filename: roles/openldap-auth-client/tasks/service.yml
+- name: start nscd service
+  service:
+    name: "{{ openldap['service']['name'] }}"
+    state: started

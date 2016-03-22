@@ -1,0 +1,34 @@
+---
+# filename: roles/openldap-auth-client/tasks/configure.yml
+- name: copy nsswitch file
+  template:
+    src: nsswitch.conf.j2
+    dest: /etc/nsswitch.conf
+    force: true
+    backup: true
+
+- name: copy common password file
+  template:
+    src: common-password.j2
+    dest: /etc/pam.d/common-password
+    force: true
+    backup: true
+
+- name: copy common session file
+  template:
+    src: common-session.j2
+    dest: /etc/pam.d/common-session
+    force: true
+    backup: true
+
+- name: copy ldap server configurations
+  template:
+    src: ldap.conf.j2
+    dest: /etc/ldap.conf
+    force: true
+    backup: true
+
+- name: copy ldap secret password
+  template:
+    src: ldap.secret.j2
+    dest: /etc/ldap.secret

@@ -1,0 +1,15 @@
+---
+# defaults file for openldap-auth-client
+openldap:
+  pkgs: 
+    - libpam-ldap
+    - nscd
+    - sysv-rc-conf
+    - ldap-auth-client
+  service:
+    name: nscd
+  config:
+    uri: ldap://ldap.local.com
+    rootbinddn: cn=admin,dc=local,dc=com
+    port: 389
+    secret: secret

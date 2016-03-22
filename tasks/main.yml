@@ -1,0 +1,6 @@
+---
+# tasks file for openldap-auth-client
+# filename: roles/openldap-auth-client/tasks/main.yml
+- include: install.yml
+- include: service.yml
+- include: configure.yml
