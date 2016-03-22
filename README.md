@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mmorejon/openldap-auth-client.svg?branch=master)](https://travis-ci.org/mmorejon/openldap-auth-client)
+
 openldap-auth-client
 =========
 
