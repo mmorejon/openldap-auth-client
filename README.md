@@ -3,7 +3,7 @@
 openldap-auth-client
 =========
 
-A brief description of the role goes here.
+Ansible role for clients authentication into OpenLdap.
 
 Requirements
 ------------
@@ -13,13 +13,19 @@ Currently working with Debian/Ubuntu.
 Role Variables
 --------------
 
+### base
+The distinguished name of the search base.
+
 ### uri
+Another way to specify your LDAP server is to provide an url.
 
 ### rootbinddn
 
 ### port
+The port by default is 389.
 
 ### secret
+The distinguished name to bind to the server with if the effective user ID is root. Password is stored in /etc/ldap.secret (mode 600)
 
 Dependencies
 ------------
@@ -43,4 +49,4 @@ GPLv2
 Author Information
 ------------------
 
-Created by Manuel Morejón.
+Created by Manuel Morejón. 

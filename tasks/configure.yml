@@ -27,6 +27,7 @@
     dest: /etc/ldap.conf
     force: true
     backup: true
+    mode: 600
 
 - name: copy ldap secret password
   template:
