@@ -20,12 +20,11 @@ The distinguished name of the search base.
 Another way to specify your LDAP server is to provide an url.
 
 ### rootbinddn
+The distinguished name to bind to the server with if the effective user ID is root. Password is stored in /etc/ldap.secret (mode 600)
 
 ### port
 The port by default is 389.
 
-### secret
-The distinguished name to bind to the server with if the effective user ID is root. Password is stored in /etc/ldap.secret (mode 600)
 
 Dependencies
 ------------
