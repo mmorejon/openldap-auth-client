@@ -9,6 +9,7 @@ openldap:
   service:
     name: nscd
   config:
+    base: dc=local,dc=com
     uri: ldap://ldap.local.com
     rootbinddn: cn=admin,dc=local,dc=com
     port: 389
