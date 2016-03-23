@@ -1,6 +1,7 @@
 openldap-auth-client
 =========
 
+[![Ansible Role](https://img.shields.io/badge/ansible--galaxy-mmorejon.openldap--auth--client-blue.svg)](https://galaxy.ansible.com/mmorejon/openldap-auth-client)
 [![Build Status](https://travis-ci.org/mmorejon/openldap-auth-client.svg?branch=master)](https://travis-ci.org/mmorejon/openldap-auth-client)
 
 Ansible role for clients authentication into OpenLdap.
