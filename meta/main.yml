@@ -1,6 +1,6 @@
 galaxy_info:
   author: Manuel Morejón Espinosa
-  description: Ansible role.
+  description: Ansible role for clients authentication into OpenLdap.
   company: Freelance
   
   # If the issue tracker for your role is not on github, uncomment the

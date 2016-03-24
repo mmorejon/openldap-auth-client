@@ -37,9 +37,10 @@ Example Playbook
 
 Here's an example playbook.
 
-    - hosts: all
+    - hosts: servers
+      become: true
       roles:
-         - { role: mmorejon.openldap-auth-client }
+         - { role: openldap-auth-client, when: ansible_distribution_release == 'trusty' }
 
 License
 -------
@@ -49,4 +50,4 @@ GPLv2
 Author Information
 ------------------
 
-Created by Manuel Morejón. 
+Created by Manuel Morejón.
