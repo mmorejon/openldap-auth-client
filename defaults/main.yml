@@ -1,5 +1,6 @@
 ---
 # defaults file for openldap-auth-client
+update_cache: true
 openldap:
   pkgs: 
     - libpam-ldap

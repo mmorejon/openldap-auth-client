@@ -3,7 +3,7 @@
 - name: install openldap client
   apt:
     name: "{{ openldap['pkgs'] }}"
-    update_cache: yes
+    update_cache: "{{ update_cache }}"
     cache_valid_time: 3600
   notify:
     - restart nscd service
